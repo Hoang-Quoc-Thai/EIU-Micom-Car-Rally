@@ -36,12 +36,19 @@ The robot is engineered to autonomously navigate high-speed tracks featuring sha
 ## 📂 Repository Structure
 ```text
 EIU-Micom-Car-Rally/
-├── Firmware/               # Embedded C/C++ source code, PID tuning, and state machine
-│   ├── Inc/                # Header files (sensor drivers, PID, PWM config)
-│   └── Src/                # Main control loop and peripheral ISRs
-├── Hardware_PCB/           # Altium / EasyEDA schematics, PCB layouts, and BOM
-├── Mechanical_CAD/         # SolidWorks / Fusion 360 assemblies and STL files for 3D printing
-└── Docs/                   # Wiring diagrams, track rulebooks, and test logs
+├── Firmware/               # Atmel Studio project & modular AVR C drivers
+│   ├── ADC/                # Optical line-sensor analog/digital acquisition
+│   ├── ENCODER/            # Wheel encoder pulse counting & distance tracking
+│   ├── HANDLE/             # MG996R steering servo control & angle mapping
+│   ├── RUN/                # Main track navigation & state-machine routines
+│   ├── SPEED/              # PWM duty-cycle generation for BTS7960 motor drivers
+│   ├── TIMER/              # Hardware timer & interrupt service routines
+│   ├── LCD/ & LED/ & BEEP/ # On-board debugging UI, status indicators & buzzer
+│   ├── EEPROM/             # Non-volatile storage for sensor calibration thresholds
+│   └── EIU MCR.atsln       # Atmel Studio solution file
+├── Hardware_PCB/           # Custom ATmega2560 control board & BTS7960 driver schematics
+├── Mechanical_CAD/         # SolidWorks chassis assembly and 3D printable parts
+└── README.md               # Project documentation                   # Wiring diagrams, track rulebooks, and test logs
 ```
 ---
 
