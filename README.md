@@ -32,6 +32,12 @@ The robot is engineered to autonomously navigate high-speed tracks featuring sha
 | **Motor Driver** | Custom Power PCB with **BTS7960** High-Current H-Bridge Drivers |
 | **Chassis & Mechanical** | Custom 3D-Modeled Chassis & Steering Linkage (**SolidWorks**) |
 ---
+### Hardware & Mechanical Overview
+| Assembled Robot |
+| :---: |
+| ![EIU MCR Robot](Docs/images/mcr_robot.jpg)|
+
+https://github.com/user-attachments/assets/2b1cdce1-1ee2-4539-871d-8eb3b522facf
 
 ## 📂 Repository Structure
 ```text
@@ -48,9 +54,12 @@ EIU-Micom-Car-Rally/
 │   └── EIU MCR.atsln       # Atmel Studio solution file
 ├── Hardware_PCB/           # Custom ATmega2560 control board & BTS7960 driver schematics
 ├── Mechanical_CAD/         # SolidWorks chassis assembly and 3D printable parts
-└── README.md               # Project documentation                   # Wiring diagrams, track rulebooks, and test logs
+└── README.md               
 ```
 ---
+
+
+
 
 ## 🔮 Future Improvements
 
